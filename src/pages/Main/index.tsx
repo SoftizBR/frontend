@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import landing_art from 'assets/landing_art.png';
 import logo from 'assets/logo.png';
 import React from 'react';
