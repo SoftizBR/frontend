@@ -3,7 +3,8 @@ export default {
 	title: 'default',
 	colors: {
 		primary: '#9D4EDD',
-		background: '#fff',
+		background: '#FEFCFD',
+		background_item: '#fff',
 		text_1: '#1B233C',
 		text_2: '#8C8C8C'
 	},

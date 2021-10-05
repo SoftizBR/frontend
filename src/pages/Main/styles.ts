@@ -73,19 +73,52 @@ export const Button = styled.button`
 `;
 
 export const InfoContainer = styled.div`
-	background-color: #f0f;
+	background-color: #fff;
 	display: flex;
 	flex-direction: row;
-	height: 250px;
 	margin-top: 20%;
+	padding: 80px 20px;
+	@media (max-width: 900px) {
+    flex-direction: column;
+  }
+	box-shadow: 0 0 1em #eee;
+	border-radius: 1rem;
 `;
 
 export const Info = styled.div`
 	flex: 1;
+	height: 250px;
+	padding: 0px 20px;
 `;
 
 export const InfoTitle = styled.strong`
 	font-size: 3rem;
+	color: ${props => props.theme.colors.text_1};
 `;
 
-export const InfoSubTitle = styled.p``;
+export const InfoSubTitle = styled.p`
+	color: ${props => props.theme.colors.text_2};
+	font-size: 2rem;
+	margin-top: 1.5rem;
+`;
+
+export const Icon = styled.img`
+	height: 80px;
+`;
+
+export const ListTitle = styled.h1`
+	font-size: 5.2rem;
+	margin-top: 200px;
+`;
+
+export const ListItem = styled.ul`
+	list-style-type: none;
+	margin-top: 50px;
+
+	li {
+		display: flex;
+		font-size: 3.2rem;
+		margin: 20px 0px;
+		align-items: center;
+	}
+`;
