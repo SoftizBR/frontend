@@ -22,11 +22,7 @@ const Main: React.FC = () => {
 		<S.Header>
 			<S.Logo src={logo} />
 			<S.ListButton>
-				<li>
-
-				<Link to="/info">Quem Somos</Link>
-
-				</li>
+				<li><Link to="/info">Quem Somos</Link></li>
 				<li><Link to="/info">Portifólio</Link></li>
 				<li><Link to="/info">Dúvidas Frequentes</Link></li>
 				<S.Button>
