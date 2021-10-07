@@ -96,7 +96,7 @@ export const Button = styled.button`
 `;
 
 export const InfoContainer = styled.div`
-	background-color: #fff;
+	background-color:  ${props => (props.theme.colors.div_color)};
 	display: flex;
 	flex-direction: row;
 	margin-top: 20%;
@@ -104,7 +104,7 @@ export const InfoContainer = styled.div`
 	@media (max-width: 900px) {
     flex-direction: column;
   }
-	box-shadow: 0 0 1em #eee;
+	box-shadow: None; //0 0 1em #eee;
 	border-radius: 1rem;
 `;
 
@@ -130,6 +130,7 @@ export const Icon = styled.img`
 `;
 
 export const ListTitle = styled.h1`
+    color: ${props => props.theme.colors.text_1};
 	font-size: 5.2rem;
 	margin-top: 200px;
 `;
@@ -141,6 +142,7 @@ export const ListItem = styled.ul`
 	li {
 		display: flex;
 		font-size: 3.2rem;
+		color: ${props => props.theme.colors.text_1}; 
 		margin: 20px 0px;
 		align-items: center;
 	}

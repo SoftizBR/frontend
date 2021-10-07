@@ -44,7 +44,7 @@ const Main: React.FC = () => {
 			<S.Info>
 				<S.Icon src={frame_1} />
 				<br />
-				<S.InfoTitle>Desenvolvimento Web</S.InfoTitle>
+				<S.InfoTitle>Desenvolvimento <br /> Web</S.InfoTitle>
 				<S.InfoSubTitle>Desenvolvemos páginas
 					responsivas para todos
 					os dispositivos.
@@ -61,7 +61,7 @@ const Main: React.FC = () => {
 			<S.Info>
 				<S.Icon src={frame_3} />
 				<br />
-				<S.InfoTitle>User Interface Design</S.InfoTitle>
+				<S.InfoTitle>User Interface <br /> Design</S.InfoTitle>
 				<S.InfoSubTitle>Desenvolvemos interfaces
 					modernas, funcionais e intuitivas.
 				</S.InfoSubTitle>
@@ -69,7 +69,7 @@ const Main: React.FC = () => {
 			<S.Info>
 				<S.Icon src={frame_4} />
 				<br />
-				<S.InfoTitle>User Experience Design</S.InfoTitle>
+				<S.InfoTitle>User Experience <br /> Design</S.InfoTitle>
 				<S.InfoSubTitle>Trabalhamos para que os usuários tenham as melhores
 					experiência possível.
 				</S.InfoSubTitle>
