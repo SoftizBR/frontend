@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 
+import _home from 'assets/home.png';
 import frame_1 from 'assets/icons/frame_1.png';
 import frame_2 from 'assets/icons/frame_2.png';
 import frame_3 from 'assets/icons/frame_3.png';
@@ -11,6 +12,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useTheme } from 'styled-components';
 import * as S from './styles';
+
 
 
 const Main: React.FC = () => {
@@ -31,13 +33,16 @@ const Main: React.FC = () => {
 			</S.ListButton>
 		</S.Header>
 		<S.InfoWrapper>
+			<div style={{flex: 1}}>
 				<S.Title>A melhor <strong>solução</strong><br/><strong>tecnológica</strong><br/>
-				{' '}para o seu <strong>negócio</strong>.</S.Title>
-				<hr />
+					{' '}para o seu <strong>negócio</strong>.</S.Title>
+					<hr />
 				<S.SubTitle>A Softiz é uma startup focada no desenvolvimento
 					de aplicações para pequenas, médias e grandes
 					empresas.
 				</S.SubTitle>
+			</div>
+				<S.ImageHome src={_home} />
 		</S.InfoWrapper>
 
 		<S.InfoContainer>

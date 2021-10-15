@@ -2,8 +2,29 @@ import { lighten } from 'polished';
 import styled from 'styled-components';
 
 export const InfoWrapper = styled.div`
-	max-width: 750px;
-	margin-top: 10%;
+
+	display: flex;
+	flex: 1;
+	height: 500px;
+	align-items: center;
+
+	div {
+		max-width: 530px;
+	}
+
+	img {
+
+		@keyframes move {
+			0% { transform: translateY(0px) }
+			50%   { transform: translateY(20px) }
+			100%   { transform: translateY(0px) }
+		}
+
+		margin-left: auto;
+		width: 500px;
+		animation: move 5s;
+  	animation-iteration-count: infinite;
+	}
 	hr {
 		border : 1px solid #eee;
 		margin: 30px 0;
@@ -99,7 +120,7 @@ export const InfoContainer = styled.div`
 	background-color:  ${props => (props.theme.colors.div_color)};
 	display: flex;
 	flex-direction: row;
-	margin-top: 20%;
+	margin-top: 10%;
 	padding: 80px 20px;
 	@media (max-width: 900px) {
     flex-direction: column;
@@ -142,8 +163,11 @@ export const ListItem = styled.ul`
 	li {
 		display: flex;
 		font-size: 3.2rem;
-		color: ${props => props.theme.colors.text_1}; 
+		color: ${props => props.theme.colors.text_1};
 		margin: 20px 0px;
 		align-items: center;
 	}
+`;
+
+export const ImageHome = styled.img`
 `;
