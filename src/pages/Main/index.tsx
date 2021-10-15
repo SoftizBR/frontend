@@ -24,10 +24,10 @@ const Main: React.FC = () => {
 		<S.Header>
 			<S.Logo src={logo} />
 			<S.ListButton>
-				<li><Link to="/info">Quem Somos</Link></li>
+				<li><Link to="/">Quem Somos</Link></li>
 				<li><Link to="/portifolio">Portifólio</Link></li>
-				<li><Link to="/info">Dúvidas Frequentes</Link></li>
-				<S.Button>
+				<li><Link to="/">Dúvidas Frequentes</Link></li>
+				<S.Button onClick={()=> window.open("https://api.whatsapp.com/send/?phone=5581996509220")}>
 					Contatar
 				</S.Button>
 			</S.ListButton>

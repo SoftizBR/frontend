@@ -1,3 +1,4 @@
+import { darken } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -9,6 +10,16 @@ export const Wrapper = styled.div`
 	background-color: ${props => props.theme.colors.div_color};
 	margin: 0 auto;
 	border-radius: 0.5rem;
+
+	:hover {
+		cursor: pointer;
+
+		box-shadow: ${props => darken( 0.1 ,props.theme.colors.div_color)} 0px 8px 24px;
+		transition: 1s;
+	}
+	:after {
+		transition: 1s;
+	}
 `;
 
 export const Image = styled.img`

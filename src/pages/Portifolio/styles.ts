@@ -10,6 +10,9 @@ export const Logo = styled.img`
 	@media (max-width: 900px) {
     height: 60px;
   }
+	:hover {
+		cursor: pointer;
+	}
 `;
 
 export const ListButton = styled.ul`
@@ -27,6 +30,9 @@ export const ListButton = styled.ul`
 
 			:hover {
 				color: ${props => lighten('0.1', props.theme.colors.text_1)};
+				text-decoration: underline;
+				text-decoration-color: ${props => props.theme.colors.primary};
+				transition: 500ms;
 			}
 		}
 	}

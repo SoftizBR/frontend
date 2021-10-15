@@ -21,7 +21,7 @@ export const InfoWrapper = styled.div`
 		}
 
 		margin-left: auto;
-		width: 500px;
+		width: 550px;
 		animation: move 5s;
   	animation-iteration-count: infinite;
 	}
@@ -92,11 +92,14 @@ export const ListButton = styled.ul`
 
 			:hover {
 				color: ${props => lighten('0.1', props.theme.colors.text_1)};
+				text-decoration: underline;
+				text-decoration-color: ${props => props.theme.colors.primary};
+				transition: 500ms;
 			}
 		}
 	}
 
-	@media (max-width: 1300px) {
+	@media (max-width: 1200px) {
     display: none;
   }
 `;
@@ -170,4 +173,7 @@ export const ListItem = styled.ul`
 `;
 
 export const ImageHome = styled.img`
+	@media (max-width: 1200px) {
+    display: none;
+  }
 `;

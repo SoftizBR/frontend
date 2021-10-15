@@ -5,7 +5,7 @@ import * as S from './styles';
 
 const PortItem: React.FC = ({children}) => {
 	return <S.Container>
-		<S.Wrapper>
+		<S.Wrapper onClick={()=> window.open("https://play.google.com/store/apps/details?id=com.rbioz.mood")}>
 			<S.Image src={_mood} />
 			<S.InfoWraper>
 				<S.Title>Mood</S.Title>
